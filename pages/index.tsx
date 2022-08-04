@@ -36,7 +36,7 @@ const metadata = {
     <meta name="description" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'A next-generation lifestyle brand'}</>
+    <>{tagline || 'LTL NFT MarketPlace BETA V3.3'}</>
   ),
   image: (image?: string) => {
     if (image) {
