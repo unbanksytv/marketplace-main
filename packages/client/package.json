@@ -1,0 +1,41 @@
+{
+    "name": "@reservoir0x/reservoir-kit-client",
+    "version": "0.0.4",
+    "description": "ReservoirKit is the official frontend kit to get you started building dApps with the ReservoirProtocol.",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "types": "dist/index.d.ts",
+    "author": "Reservoir Protocol",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rm -rf dist",
+        "version": "yarn version",
+        "version:update": "yarn version ${0}; git add -A; git commit -m \"🎉 Release client package v${1}\"; git push",
+        "syncApi": "npx openapi-typescript https://api.reservoir.tools/swagger.json --output ./src/types/api.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/reservoirprotocol/reservoir-kit"
+    },
+    "sideEffects": false,
+    "keywords": [
+        "nft",
+        "reservoir",
+        "reservoirkit",
+        "protocol",
+        "sdk"
+    ],
+    "peerDependencies": {
+        "ethers": "^5.6.1"
+    },
+    "dependencies": {
+        "axios": "^0.27.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
