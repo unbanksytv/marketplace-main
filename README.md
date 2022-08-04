@@ -88,6 +88,12 @@ This is a Next.js app that can be easily deployed using  [Vercel](https://vercel
 <!-- Contributing -->
 ## Contributing
 
+Coming soon 👀
+✨ Listing
+✨ Multi-buy
+✨ Cart management
+✨ Token management
+
 If you'd like to contribute please follow the [guidelines](https://github.com/reservoirprotocol/marketplace/blob/main/CONTRIBUTING.md).
 
 <!-- CONTACT -->
