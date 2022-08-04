@@ -12,6 +12,10 @@ With each deployment, communities are given full control over their marketplace 
 
 For self hosted deployments you can simply fork this repository and follow the instructions below to configure and deploy your marketplace. 
 
+When designing an order book, one typically have two choices: optimize for cost (store orders off-chain) or optimize for openness (store orders on-chain). On Ethereum, where 80% of NFT value is traded, off-chain order books have dominated (Open Sea, Rarible, etc) because it's simply too expensive to store orders on-chain. Where protocols have implemented on-chain storage (Zora), they are liquidity constrained, since publishing any order (asks or bids) is costly.
+
+Reservoir introduces a third option. Orders are stored on-chain, but on a different chain. Because orders are self-contained signed messages, they don't need the full might of Ethereum to secure them. Instead, Reservoir uses Arweave as a low-cost Data Lake for raw order storage. It's cheap enough that marketplaces can still offer the free listing experience that users expect, and secure enough to guarantee permissionless data availability. Even better, anyone can run the open-source Reservoir Indexer that combines raw order data from Arweave, with ownership data from Ethereum, to trustlessly reconstruct the state of the order book.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Configuration
