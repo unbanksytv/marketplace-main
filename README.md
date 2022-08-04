@@ -6,13 +6,7 @@ An open source NFT marketplace built on Reservoir.
 ## About The Project
 
 
-Degen Vibes is an open source marketplace that enables communities to easily launch their own NFT marketplace, accessing instant liquidity aggregated from other major marketplaces. The usual arguments for decentralization are censorship-resistance, trustless validation, or global populism—empowering anyone to participate in a system. But there's a simpler one too: universal liquidity. Tt's why decentralized orderbooks are the future
-  
-With each deployment, communities are given full control over their marketplace from designing their look and feel to setting their own marketplace fees.
-
-For self hosted deployments you can simply fork this repository and follow the instructions below to configure and deploy your marketplace. 
-
-When designing an order book, one typically have two choices: optimize for cost (store orders off-chain) or optimize for openness (store orders on-chain). On Ethereum, where 80% of NFT value is traded, off-chain order books have dominated (Open Sea, Rarible, etc) because it's simply too expensive to store orders on-chain. Where protocols have implemented on-chain storage (Zora), they are liquidity constrained, since publishing any order (asks or bids) is costly.
+Degen Vibes is an open source marketplace that enables communities to easily launch their own NFT marketplace, accessing instant liquidity aggregated from other major marketplaces. The usual arguments for decentralization are censorship-resistance, trustless validation, or global populism—empowering anyone to participate in a system. But there's a simpler one too: universal liquidity. It's why decentralized orderbooks are the future. When designing an order book, one typically have two choices: optimize for cost (store orders off-chain) or optimize for openness (store orders on-chain). On Ethereum, where 80% of NFT value is traded, off-chain order books have dominated (Open Sea, Rarible, etc) because it's simply too expensive to store orders on-chain. Where protocols have implemented on-chain storage (Zora), they are liquidity constrained, since publishing any order (asks or bids) is costly.
 
 Reservoir introduces a third option. Orders are stored on-chain, but on a different chain. Because orders are self-contained signed messages, they don't need the full might of Ethereum to secure them. Instead, Reservoir uses Arweave as a low-cost Data Lake for raw order storage. It's cheap enough that marketplaces can still offer the free listing experience that users expect, and secure enough to guarantee permissionless data availability. Even better, anyone can run the open-source Reservoir Indexer that combines raw order data from Arweave, with ownership data from Ethereum, to trustlessly reconstruct the state of the order book.
 
